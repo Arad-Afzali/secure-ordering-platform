@@ -4,6 +4,14 @@ A full-stack sandwich-ordering web app, built as a hands-on exercise to get prac
 
 It covers a typical end-to-end flow: browsing a daily menu with live availability, building and confirming an order behind a login wall, and managing past orders — a compact sample of how these pieces fit together in a real app.
 
+Security features:
+
+- Session-based login with Passport.js and optional TOTP two-factor authentication
+- Passwords hashed with scrypt and a per-user salt
+- Parameterized SQL queries against injection
+- Ownership checks on every order route to prevent IDOR
+- All business rules validated on the server, not only in the client
+
 ## React Client Application Routes
 
 - Route `/`: home page, public. Shows today's S/M/L availability and the menu (mains, breads, ingredients, dressings).
