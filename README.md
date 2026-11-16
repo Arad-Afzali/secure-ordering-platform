@@ -1,4 +1,4 @@
-# Sandwich App
+# Secure Ordering Platform
 
 A full-stack sandwich-ordering web app, built as a hands-on exercise to get practical experience with a React front end, an Express/SQLite back end, session-based authentication, and optional TOTP two-factor login.
 
